@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance web-Development site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About Me</a></li>
+                <li><a href="#Expertise">Expertise</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="themeToggle"><i class="fas fa-moon bi bi-moon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon" viewBox="0 0 16 16">
+                    <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
+                  </svg> Dark mode
+            </i></button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img class="avatar-logo" src="data:image/png;base64,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" alt="profile logo" width="150px" style="border-radius: 150px;"></style>
+            <h1>Hi, I'm Vuyisa Khruschev Mamba</h1>
+            <p>A passionate Web developer building beautiful and functional web experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="About" class="About">
+        <div class="About-content">
+            <img src="https://www.shutterstock.com/image-vector/cartoon-beard-handsome-character-casual-600nw-2174922633.jpg" alt="logo" width="300px" style="border-radius: 25px;">
+            <h2>About Me:</h2>
+            <p>I’m Vuyisa Khruschev Mamba, a skilled full-stack web developer specializing in building dynamic,</br> responsive, and scalable web applications. With expertise in HTML5, CSS3, JavaScript (ES6+), React.js, Node.js, Express.js, and PostgreSQL,</br> I create seamless user experiences and robust backend solutions. I have a strong background in database management,</br> API integration, and version control using Git and GitHub. Whether it's crafting engaging front-end interfaces or optimizing</br> server-side functionality, I am passionate about delivering high-quality, efficient, and maintainable code. Let’s build something great together!</p>
+            
+        </div>
+    </section>
+
+    <section id="Expertise" class="expertise">
+        <h2>My Expertise</h2>
+        <div class="expertise-list" id="expertiseList"></div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="App">App</button>
+        </div>
+        <div class="projects-grid" id="projectsGrid"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name"  name="name" required>
+            <input type="email" id="email" placeholder="Your Email" name="email" required>
+            <textarea id="message" placeholder="Your Message" required name="text"></textarea>
+            <button type="submit">Send Message</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vuyisa. All rights reserved.</p>
+    </footer>
+
+   <script src="app.js"></script>
+</body>
+</html>
